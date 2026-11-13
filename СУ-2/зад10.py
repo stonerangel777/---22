@@ -1,0 +1,13 @@
+sentence = input("Въведете изречение: ")
+
+words = sentence.lower().split()
+
+dictionary = {}
+
+for word in words:
+    if word in dictionary:
+        dictionary[word] += 1
+    else:
+        dictionary[word] = 1
+
+print("Речник:", dictionary)
